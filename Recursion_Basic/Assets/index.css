@@ -11,9 +11,7 @@ body > article{
     padding:50px 100px;
     border:5px double black;
     border-radius:50px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display:none;
 }
 
 article > article{
@@ -64,4 +62,44 @@ section:nth-of-type(2) div div{
 
 div span{
     width:9%;
+    position:relative;
+}
+
+.transperence{
+    animation:transperence 1s;
+}
+
+.transperenceRemoval{
+    animation:transperenceRemoval 1s;
+}
+
+@keyframes transperenceRemoval{
+    from{
+        color:transparent;
+    }
+    to{
+        color:black;
+    }
+}
+
+@keyframes transperence{
+    from{
+        color:black;
+    }
+    to{
+        color:transparent;
+    }
+}
+
+.animate{
+    animation:animate 200ms;
+}
+
+@keyframes animate{
+    from{
+        bottom:25px;
+    }
+    to{
+        bottom:0px;
+    }
 }

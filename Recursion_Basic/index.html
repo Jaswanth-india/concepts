@@ -8,16 +8,20 @@
     <script src="Assets/index.js" defer></script>
 </head>
 <body>
+    <h1>Importance of position of console in Recursive function</h1>
     <article>
         <article>
             <section>
                 <h1>Source Code</h1>
                 <div>
                     <div>function counter(number){</div>
-                    <div style="margin-left:25px;">if(number>0){</div>
-                    <div style="margin-left:50px;">console.log(number);</div>
-                    <div style="margin-left:50px;">counter(number-1);</div>
-                    <div style="margin-left:25px;">}</div>
+                    <div style="margin-left:25px;"></div>
+                    <div style="margin-left:25px;" id="ifStart">if(number>0){</div>
+                    <div style="margin-left:50px;" id="console">console.log(number);</div>
+                    <div style="margin-left:50px;" id="recursor">counter(number-1);</div>
+                    <div style="margin-left:50px;"></div>
+                    <div style="margin-left:25px;" id="ifEnd">}</div>
+                    <div style="margin-left:25px;"></div>
                     <div>}</div>
                 </div>
             </section>
